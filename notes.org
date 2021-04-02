@@ -1,0 +1,21 @@
+#+TITLE: Notes
+* IDEAS
+- Design statement
+- NORRIE
+- Scroll-y
+- Fonts
+- Diarama images
+- Clipart of diaramas
+- Music?
+  + MIDI?
+    - parts of songs
+  + Streaming?
+    - Hit Clips
+- Landing page + digital zine
+- Broken styling
+- Sparse
+- MBV Loveless pink, degraded film teal/turquoise
+- Drop shadows that look like holes in the background, reveal image underneath
+- Not necessarily nostalgia
+  + Transitional technologies
+  + mix of older and newer elements
