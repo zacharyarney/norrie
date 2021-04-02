@@ -1,0 +1,549 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+  font-family: 'Lucida Hand Pixelated 16';
+  src: url(../fonts/LHANDW.TTF-16-Regular-3d8475b6caeaf055934b7ed1d1a45d1e6f3aa3bac4d9fecc2cc427719100d8f6.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 16';
+  src: url(../fonts/COMIC.TTF-16-Regular-87845c199854c600453dadc41eeed363ec3aa8a4a2fe3249a24f3927233c7f8a.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 16 Bold';
+  src: url(../fonts/COMICBD.TTF-16-Bold-15ae9cd2d996c7aa721c8ade64c7e2318ec6e6e9dfab41d3d759d197a9e0ef76.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lucida Hand Pixelated 24';
+  src: url(../fonts/LHANDW.TTF-24-Regular-baeb1effa2f76dea5c37170179f6d20b2ecf45f576acd870004b2ef6a807c574.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 24';
+  src: url(../fonts/COMIC.TTF-24-Regular-5233efcbaeb53a51009f4963eeba683aebe8e4e303b4459340ba5f913355f36d.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 24 Bold';
+  src: url(../fonts/COMICBD.TTF-24-Bold-563678ec8bd1436c829ab401d79965af623525a699e5c12f0f1a5566fdbe31fa.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lucida Hand Pixelated 32';
+  src: url(../fonts/LHANDW.TTF-32-Regular-918730282c8adbaa45b8ca1fe27989b30e215a4b275e128fe5ce76562923d781.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 32';
+  src: url(../fonts/COMIC.TTF-32-Regular-b1503cba6282ccdb89836d9e01ca6077013b36a3a8fdb170652d769eb2a4e0fb.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Comic Sans Pixelated 32 Bold';
+  src: url(../fonts/COMICBD.TTF-32-Bold-fcda8d70dfd36e66d71d6d13bb84ac7f0bea59621ae77cca9ca1f18f1f628c95.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 16';
+  src: url(../fonts/ARIAL.TTF-16-Regular-b9f5574a9bb97187d6b084f1bc2154f3a6ed8cf7be934e146dff6dfde54c8640.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 16 Italic';
+  src: url(../fonts/ARIALI.TTF-16-Italic-9bce4ada5e38676fd29617294c3d79483da73904dcceb142bee755c85985d7df.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 16 Bold';
+  src: url(../fonts/ARIALBD.TTF-16-Bold-b2d7887581c49d2656defb61b092f21d0f2afda57fa8a8d20d6252d7417abcd1.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 16 Bold Italic';
+  src: url(../fonts/ARIALBI.TTF-16-BoldItalic-5c0316c8696eb989d80139ceb4d0a4cdea03bdfea9e0aba9969b681fd93c7f45.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 24';
+  src: url(../fonts/ARIAL.TTF-24-Regular-3995d00b4303eb1cda9a408f324d211a7db3164e9d75b51e5a9df6fb34abf0a9.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 24 Italic';
+  src: url(../fonts/ARIALI.TTF-24-Italic-ebee70d29ac222ac06328639cb597af6ffdedc7e460bb18cd9881fd4072c519d.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 24 Bold';
+  src: url(../fonts/ARIALBD.TTF-24-Bold-b0328a1ae272c52306435f5fb508851cfc0d37d63ca557ef6f1985cc6125c1dd.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 24 Bold Italic';
+  src: url(../fonts/ARIALBI.TTF-24-BoldItalic-579ca96701bca6744d10f92d6ae7ba0fe301c1b6f2c1943a6ef89991d692112f.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 32';
+  src: url(../fonts/ARIAL.TTF-32-Regular-042434afd68ce47d11a811de9e00cbbf7157d36ac0c1358cbce5821287ee1fbb.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 32 Italic';
+  src: url(../fonts/ARIALI.TTF-32-Italic-f3e171c9d69f0ef12cf80cd66ebbc124e824451be0879ab5d55b6b888e148155.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 32 Bold';
+  src: url(../fonts/ARIALBD.TTF-32-Bold-e5b79dcc0d8e5269ab39be37624083a59f16f23b3a0909fb0e55119b682a8653.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Arial Pixelated 32 Bold Italic';
+  src: url(../fonts/ARIALBI.TTF-32-BoldItalic-987a038e25aea18268fe4c1a9c5201a214eaee82cfbc239c5a92b4922ba71185.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 16';
+  src: url(../fonts/COUR.TTF-16-Regular-89c8f195d255e810c8a9759e119bc4be6d48ef0ff2b27327510e5988321fa0a3.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 16 Italic';
+  src: url(../fonts/COURI.TTF-16-Italic-6a122f384aa68cd5c1b947e507a080eea4435b2cbb50e7e5b05089fd6f2126eb.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 16 Bold';
+  src: url(../fonts/COURBD.TTF-16-Bold-ba6741e19697111a72a693b650259115b2433062946b3b62072441ae2cfaae4c.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 16 Bold Italic';
+  src: url(../fonts/COURBI.TTF-16-BoldItalic-9de942915276821f3d7357075cf0c6ad143845765ab95968221c1325a809f081.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 24';
+  src: url(../fonts/COUR.TTF-24-Regular-fb8f52cd76a9c2923314a3bdb2712fd47c1594815d2b972fc351ed2c1dd80ad4.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 24 Italic';
+  src: url(../fonts/COURI.TTF-24-Italic-c7e760cc5d24299e84a5bfc9943061baf2ef87899135f8e48e9ba77e3f1e6f2b.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 24 Bold';
+  src: url(../fonts/COURBD.TTF-24-Bold-92c00842c246bc1868e1c6f99865c8576bec7f2fb28b240c9d6d27401461bf4d.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 24 Bold Italic';
+  src: url(../fonts/COURBI.TTF-24-BoldItalic-b797278fd7900a1069577f6f2772175b6e69d6375d6b2b83bbed6815ba564252.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 32';
+  src: url(../fonts/COUR.TTF-32-Regular-874fe543f8db379d3e092d5ed019794d7e5f1f862015dd510cbed21492833a10.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 32 Italic';
+  src: url(../fonts/COURI.TTF-32-Italic-66af36b1d65297021e67a5f631d5b332ae8682ce221ca43d67d26f4749c64d49.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 32 Bold';
+  src: url(../fonts/COURBD.TTF-32-Bold-400b4b2c1118e092dec05f4d1baa30bc1b05fd8f64dd4845693ffa8b9a2eed76.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Courier Pixelated 32 Bold Italic';
+  src: url(../fonts/COURBI.TTF-32-BoldItalic-b8498437b4d84136cea27c2d40365a7fbbb6677818b22e9bc0e3eecaa51cb419.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 16';
+  src: url(../fonts/TIMES.TTF-16-Regular-fa46b8e0f87ca255fb212abd7b50554b2c9335b09da60399ec65001cea25fa8b.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 16 Italic';
+  src: url(../fonts/TIMESI.TTF-16-Italic-baf8283ca63eb32ae1d1f546959c817b50001901fc7d1ff355f5143e35dc7ea1.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 16 Bold';
+  src: url(../fonts/TIMESBD.TTF-16-Bold-566bcacdc98e1ed8723a224dc8dbdcb7f8c59fb167d8412e1c2c1f25581af023.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 16 Bold Italic';
+  src: url(../fonts/TIMESBI.TTF-16-BoldItalic-af1495480292a462add1957555ae2003aa8372685b9f2f01a92b81b8bebbacef.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 24';
+  src: url(../fonts/TIMES.TTF-24-Regular-7c0b1231563ed83046d8d6422b79676ed331447c65c814eab33f613c45a0393f.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 24 Italic';
+  src: url(../fonts/TIMESI.TTF-24-Italic-58cf26148c9e6daa329b4a96efc98c862017d976777ae40dc9dd1268357edcf9.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 24 Bold';
+  src: url(../fonts/TIMESBD.TTF-24-Bold-e2ccd12c29de9f46f55f6b22d8e8c9f22147450fcc3ced5089199e105b7b2acf.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 24 Bold Italic';
+  src: url(../fonts/TIMESBI.TTF-24-BoldItalic-a5aef918265b53cba782693603783cb0966fe01502db4f7decafc86743fc6df5.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 32';
+  src: url(../fonts/TIMES.TTF-32-Regular-22dae76028f2c66f6d7b5157a3994078e4f4f782344d507eeac76f9b22156ca4.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 32 Italic';
+  src: url(../fonts/TIMESI.TTF-32-Italic-fe7792e91f27e126d6d176b3a24e600205545b4ac5a98c3a80f06bdec7e42eb7.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 32 Bold';
+  src: url(../fonts/TIMESBD.TTF-32-Bold-2164905c85a319d9746be1ddc807c7bc45f43f71508e5e2e37c937ef16d62efd.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Times Pixelated 32 Bold Italic';
+  src: url(../fonts/TIMESBI.TTF-32-BoldItalic-ba954b5ab9235c0b4e3942b6c8158e8d85776ed0aa8e010eb143ba8a6f3678c5.woff)
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MS Sans Pixelated 13';
+  src: url(../fonts/SSERIFF.FON-13-Regular-ce6e7d93364067828fa58397ba8bf6b9a8749d226b037e20aeb3d04895bb16c2.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MS Sans Pixelated 17';
+  src: url(../fonts/SSERIFF.FON-17-Regular-87ebc7c9d334e8ebcd7a0ae82c49be0e6067608626321365ba7dbfcf2fa0202c.woff)
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// End reset
+
+html {
+  background: white;
+}
+
+body {
+  // -webkit-font-smoothing: none;
+  background: lightgray;
+  border: outset gray 3px;
+  image-rendering: pixelated;
+  margin: 40px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+audio {
+  margin: 20px;
+}
+
+h1 {
+  border: inset gray 3px;
+  font-family: 'Times Pixelated 24 Bold Italic';
+  font-size: 24px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 90px;
+}
+
+p {
+  font-family: 'Times Pixelated 16';
+  font-size: 16px;
+  margin: 20px;
+}
+
+img {
+  box-shadow: 15px 15px 0;
+  height: auto;
+  margin: 20px;
+  width: 90%;
+}
