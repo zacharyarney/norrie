@@ -459,7 +459,7 @@ html {
   background: white;
 }
 body {
-  background: lightgray;
+  background: palegoldenrod;
   border: outset gray 3px;
   image-rendering: pixelated;
   margin: 40px;
@@ -487,7 +487,21 @@ p {
 }
 img {
   box-shadow: 15px 15px 0;
-  height: auto;
+  height: 250px;
   margin: 20px;
-  width: 90%;
+  width: auto;
+}
+.norrie-gif {
+  box-shadow: none;
+  height: unset;
+  width: unset;
+}
+.sample {
+  box-shadow: none;
+  height: 200px;
+  width: auto;
+}
+pre {
+  font-family: 'Courier Pixelated 16';
+  margin: 20px;
 }
