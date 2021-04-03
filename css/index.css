@@ -490,10 +490,9 @@ img {
   margin: 20px;
   max-width: 80%;
 }
-.norrie-gif {
+.gif {
   box-shadow: none;
-  height: unset;
-  width: unset;
+  margin: 0 20px;
 }
 .sample {
   box-shadow: none;
