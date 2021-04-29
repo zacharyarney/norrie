@@ -546,10 +546,12 @@ h1 {
   flex-direction: column;
   image-rendering: auto;
   justify-content: space-between;
-  padding: 0 auto;
   margin: 0 auto;
   max-width: 800px;
-  width: fit-content;
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+  width: max-content;
 
   // audio {
   //   width: 100%;
