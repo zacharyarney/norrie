@@ -456,39 +456,65 @@ table {
   border-spacing: 0;
 }
 html {
-  background: white;
+  background-image: url('../img/starry-night.gif');
+  background-repeat: repeat;
+  image-rendering: pixelated;
 }
 body {
-  background: palegoldenrod;
-  border: outset gray 3px;
-  image-rendering: pixelated;
-  margin: 40px;
+  border: solid white 1px;
+  color: white;
+  margin: 40px auto;
+  width: 800px;
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: grayscale;
 }
-audio {
-  margin: 20px;
-}
 h1 {
-  border: inset gray 3px;
-  font-family: 'Times Pixelated 24 Bold Italic';
-  font-size: 24px;
-  font-style: italic;
+  color: hotpink;
+  font-family: 'Comic Sans Pixelated 32 Bold';
+  font-size: 32px;
   font-weight: bold;
   margin: 20px;
+  min-width: fit-content;
   padding: 20px;
   text-align: center;
+  text-shadow: 2px 2px mediumturquoise;
   width: 90px;
 }
+.when {
+  display: flex;
+  flex-direction: column;
+  image-rendering: auto;
+  justify-content: space-between;
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 800px;
+  width: fit-content;
+}
+.when .audio-container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.when .audio-container .audio-play-button {
+  border: outset white 3px;
+  height: 40px;
+  width: 60px;
+}
+.when .audio-container .audio-play-button:active {
+  border: inset white 3px;
+}
+.when img {
+  border: solid white 3px;
+  box-shadow: 8px 8px 0 hotpink, 16px 16px 0 mediumturquoise;
+  margin: 20px auto;
+  max-width: 600px;
+}
 p {
-  font-family: 'Times Pixelated 16';
+  color: white;
+  font-family: 'Comic Sans Pixelated 16';
   font-size: 16px;
   margin: 20px;
-}
-img {
-  box-shadow: 15px 15px 0;
-  margin: 20px;
-  max-width: 80%;
 }
 .gif {
   box-shadow: none;
@@ -500,6 +526,6 @@ img {
   width: auto;
 }
 pre {
-  font-family: 'Courier Pixelated 16';
+  font-family: monospace;
   margin: 20px;
 }
