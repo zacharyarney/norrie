@@ -497,6 +497,7 @@ h1 {
   justify-content: flex-start;
 }
 .when .audio-container .audio-play-button {
+  background: gray;
   border: outset white 3px;
   height: 40px;
   width: 60px;
